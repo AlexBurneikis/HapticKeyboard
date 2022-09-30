@@ -7,18 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3831585C28E6746B0051DB68 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3831585B28E6746B0051DB68 /* KeyboardKit */; };
+		3831585E28E675F20051DB68 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831585D28E675F20051DB68 /* KeyboardView.swift */; };
 		38A7438D28E6636E00549563 /* HapticKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7438C28E6636E00549563 /* HapticKeyboardApp.swift */; };
 		38A7438F28E6636E00549563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A7438E28E6636E00549563 /* ContentView.swift */; };
 		38A7439128E6636E00549563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A7439028E6636E00549563 /* Assets.xcassets */; };
 		38A7439428E6636E00549563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A7439328E6636E00549563 /* Preview Assets.xcassets */; };
+		38A743A128E6638300549563 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A743A028E6638300549563 /* KeyboardViewController.swift */; };
+		38A743A528E6638300549563 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 38A7439E28E6638300549563 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38EEB80828E6765F004B1540 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 38EEB80728E6765F004B1540 /* KeyboardKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		38A743A328E6638300549563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38A7438128E6636E00549563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38A7439D28E6638300549563;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38A743A928E6638300549563 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38A743A528E6638300549563 /* Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3831585D28E675F20051DB68 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		38A7438928E6636E00549563 /* HapticKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A7438C28E6636E00549563 /* HapticKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticKeyboardApp.swift; sourceTree = "<group>"; };
 		38A7438E28E6636E00549563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38A7439028E6636E00549563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38A7439328E6636E00549563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38A7439E28E6638300549563 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A743A028E6638300549563 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		38A743A228E6638300549563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +59,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3831585C28E6746B0051DB68 /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A7439B28E6638300549563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38EEB80828E6765F004B1540 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				38A7438B28E6636E00549563 /* HapticKeyboard */,
+				38A7439F28E6638300549563 /* Keyboard */,
 				38A7438A28E6636E00549563 /* Products */,
+				38EEB80628E6765F004B1540 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				38A7438928E6636E00549563 /* HapticKeyboard.app */,
+				38A7439E28E6638300549563 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +112,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		38A7439F28E6638300549563 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				38A743A028E6638300549563 /* KeyboardViewController.swift */,
+				3831585D28E675F20051DB68 /* KeyboardView.swift */,
+				38A743A228E6638300549563 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		38EEB80628E6765F004B1540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +139,40 @@
 				38A7438528E6636E00549563 /* Sources */,
 				38A7438628E6636E00549563 /* Frameworks */,
 				38A7438728E6636E00549563 /* Resources */,
+				38A743A928E6638300549563 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38A743A428E6638300549563 /* PBXTargetDependency */,
+			);
+			name = HapticKeyboard;
+			packageProductDependencies = (
+				3831585B28E6746B0051DB68 /* KeyboardKit */,
+			);
+			productName = HapticKeyboard;
+			productReference = 38A7438928E6636E00549563 /* HapticKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38A7439D28E6638300549563 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A743A628E6638300549563 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				38A7439A28E6638300549563 /* Sources */,
+				38A7439B28E6638300549563 /* Frameworks */,
+				38A7439C28E6638300549563 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HapticKeyboard;
-			productName = HapticKeyboard;
-			productReference = 38A7438928E6636E00549563 /* HapticKeyboard.app */;
-			productType = "com.apple.product-type.application";
+			name = Keyboard;
+			packageProductDependencies = (
+				38EEB80728E6765F004B1540 /* KeyboardKit */,
+			);
+			productName = Keyboard;
+			productReference = 38A7439E28E6638300549563 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +187,9 @@
 					38A7438828E6636E00549563 = {
 						CreatedOnToolsVersion = 14.0;
 					};
+					38A7439D28E6638300549563 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 				};
 			};
 			buildConfigurationList = 38A7438428E6636E00549563 /* Build configuration list for PBXProject "HapticKeyboard" */;
@@ -111,11 +201,15 @@
 				Base,
 			);
 			mainGroup = 38A7438028E6636E00549563;
+			packageReferences = (
+				3831585A28E6746B0051DB68 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			productRefGroup = 38A7438A28E6636E00549563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				38A7438828E6636E00549563 /* HapticKeyboard */,
+				38A7439D28E6638300549563 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +221,13 @@
 			files = (
 				38A7439428E6636E00549563 /* Preview Assets.xcassets in Resources */,
 				38A7439128E6636E00549563 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A7439C28E6638300549563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +243,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38A7439A28E6638300549563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A743A128E6638300549563 /* KeyboardViewController.swift in Sources */,
+				3831585E28E675F20051DB68 /* KeyboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38A743A428E6638300549563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38A7439D28E6638300549563 /* Keyboard */;
+			targetProxy = 38A743A328E6638300549563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		38A7439528E6636E00549563 /* Debug */ = {
@@ -195,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,6 +380,7 @@
 		38A7439828E6636E00549563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +394,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,15 +402,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexburneikis.HapticKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		38A7439928E6636E00549563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +428,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +436,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexburneikis.HapticKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		38A743A728E6638300549563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34D2A9BXM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Haptic Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexburneikis.HapticKeyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		38A743A828E6638300549563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34D2A9BXM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Haptic Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexburneikis.HapticKeyboard.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -338,7 +516,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		38A743A628E6638300549563 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A743A728E6638300549563 /* Debug */,
+				38A743A828E6638300549563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3831585A28E6746B0051DB68 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3831585B28E6746B0051DB68 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3831585A28E6746B0051DB68 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		38EEB80728E6765F004B1540 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3831585A28E6746B0051DB68 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 38A7438128E6636E00549563 /* Project object */;
 }
